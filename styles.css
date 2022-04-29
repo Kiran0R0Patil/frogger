@@ -1,0 +1,42 @@
+.grid {
+    border: 1px solid black;
+    background-color: rgba(248, 141, 0, 0.26);
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div{
+    height: 40px;
+    width: 40px;
+}
+
+.ending-block{
+    background-color: red;
+}
+
+.left-river,
+.right-river {
+    background-color: rgba(0, 191, 255, 0.30);
+}
+
+.left-car, 
+.right-car {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.starting-block{
+    background-color: rgba(27, 2, 253, 0.5);
+}
+
+.button {
+    width: 360px;
+    margin-top: 10px ;
+    display: flex;
+    justify-content: center;
+}
+
+.frog {
+    background-color: greenyellow;
+}
