@@ -1,6 +1,20 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0);
+background-size: cover;
+}
+
+.container{
+    background-color: rgba(255, 255, 0, 0.75) ;
+    padding: 2rem;
+}
 .grid {
     border: 1px solid black;
-    background-color: rgba(248, 141, 0, 0.26);
+    /* background-color: rgba(248, 141, 0, 0.26); */
     height: 360px;
     width: 360px;
     display: flex;
@@ -12,31 +26,31 @@
     width: 40px;
 }
 
+.button {
+    width: 360px;
+    margin-top: 10px ;
+    margin-left: 35%;
+}
+
 .ending-block{
     background-color: red;
 }
 
 .left-river,
 .right-river {
-    background-color: rgba(0, 191, 255, 0.30);
+    background-color: rgba(0, 191, 255, 0.70);
 }
 
 .left-car, 
 .right-car {
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .starting-block{
-    background-color: rgba(27, 2, 253, 0.5);
+    background-color: rgba(27, 2, 253, 0.75);
 }
 
-.button {
-    width: 360px;
-    margin-top: 10px ;
-    display: flex;
-    justify-content: center;
-}
 
 .frog {
-    background-color: greenyellow;
+    background-color: green;
 }
