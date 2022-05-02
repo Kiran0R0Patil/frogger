@@ -41,12 +41,31 @@ button{
 
 .left-log,
 .right-log {
-    background-color: rgba(0, 191, 255, 0.70);
+    background-color: rgb(54, 179, 221);
 }
 
-.left-car, 
-.right-car {
-    background-color: rgba(0, 0, 0, 0.85);
+.l1,
+.l3 {
+    background-image: url(images/logT1.png);
+}
+
+.l2 {
+    background-image: url(images/logT2.png);
+}
+
+.cl2,
+.cl3,
+.cr2,
+.cr3 {
+    background-color: rgb(26, 24, 24);
+}
+
+.cr1{
+    background-image: url(images/Rcar.PNG);
+}
+
+.cl1{
+    background-image: url(images/Lcar.PNG);
 }
 
 .starting-block{
@@ -54,16 +73,7 @@ button{
 }
 
 .frog {
-    background-image: url(frog.png);
-}
-.l1,
-.l2,
-.l3
-{
-    background-color: brown;
+    background-image: url(images/frog.png);
 }
 
-.l4,
-.l5{
-        background-color: rgba(0, 191, 255, 0.70);
-}
+

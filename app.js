@@ -4,6 +4,8 @@ const startPauseButton = document.querySelector('#start-pause')
 const squares = document.querySelectorAll('.grid div')
 const logsLeft = document.querySelectorAll('.left-log')
 const logsRight = document.querySelectorAll('.right-log')
+const carsLeft = document.querySelectorAll('.left-car')
+const carsRight = document.querySelectorAll('.right-car')
 
 let currentIndex = 76;
 // make a frog and track movement
@@ -36,12 +38,14 @@ function moveFrog(e) {
 }
 document.addEventListener('keyup', moveFrog)
 
-
-
-function autoMoveLogs(){
+function autoMove(){
     logsLeft.forEach(logLeft => moveLogLeft(logLeft))
     logsRight.forEach(logRight => moveLogRight(logRight))
+    carsLeft.forEach(carLeft => moveCarLeft(carLeft))
+    carsRight.forEach(carRight => moveCarRight(carRight))
 }
+
+setInterval(autoMove, 1000)
 
 function moveLogLeft(logLeft){
     switch(true){
@@ -93,4 +97,36 @@ function moveLogRight(logRight){
     }
 }
 
-setInterval(autoMoveLogs, 1000)
+function moveCarLeft(carLeft){
+    switch(true){
+        case carLeft.classList.contains('cl1'):
+            carLeft.classList.remove('cl1')
+            carLeft.classList.add('cl2')
+            break
+        case carLeft.classList.contains('cl2'):
+            carLeft.classList.remove('cl2')
+            carLeft.classList.add('cl3')
+            break 
+        case carLeft.classList.contains('cl3'):
+            carLeft.classList.remove('cl3')
+            carLeft.classList.add('cl1')
+            break
+    }
+}
+
+function moveCarRight(carRight){
+    switch(true){
+        case carRight.classList.contains('cr1'):
+            carRight.classList.remove('cr1')
+            carRight.classList.add('cr3')
+            break
+        case carRight.classList.contains('cr2'):
+            carRight.classList.remove('cr2')
+            carRight.classList.add('cr1')
+            break 
+        case carRight.classList.contains('cr3'):
+            carRight.classList.remove('cr3')
+            carRight.classList.add('cr2')
+            break
+    }
+}
